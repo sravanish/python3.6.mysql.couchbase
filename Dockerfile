@@ -34,7 +34,7 @@ RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-rele
   dpkg -i couchbase-release-1.0-2-amd64.deb && \
   apt-get update && \
   apt-get -y install libcouchbase-dev build-essential && \
-  pip install couchbase xlrd && \
+  pip install couchbase openpyxl && \
   rm couchbase-release-1.0-2-amd64.deb && \
   rm -rf /var/lib/apt/lists/*
 
