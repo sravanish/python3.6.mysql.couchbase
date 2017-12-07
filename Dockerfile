@@ -26,8 +26,8 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
   rm -f /usr/bin/pip && ln -s /usr/local/bin/pip /usr/bin/pip && \
   rm get-pip.py
   
-# Install mysql connector for python
-RUN pip install mysql-connector-python-rf
+# Install mysql connector and requests modules for python
+RUN pip install mysql-connector-python-rf requests
 
 # Install couchbase dev tools
 RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-2-amd64.deb && \
