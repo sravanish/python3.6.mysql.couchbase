@@ -29,6 +29,9 @@ RUN wget https://bootstrap.pypa.io/get-pip.py && \
 # Install mysql connector and requests modules for python
 RUN pip install mysql-connector-python-rf requests
 
+# Install paramiko for scp
+RUN pip install paramiko
+
 # Install couchbase dev tools
 RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-2-amd64.deb && \
   dpkg -i couchbase-release-1.0-2-amd64.deb && \
