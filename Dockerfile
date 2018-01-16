@@ -32,6 +32,9 @@ RUN pip install mysql-connector-python-rf requests
 # Install paramiko for scp
 RUN pip install paramiko scp
 
+# Install dateutils
+RUN pip install dateutils
+
 # Install couchbase dev tools
 RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-2-amd64.deb && \
   dpkg -i couchbase-release-1.0-2-amd64.deb && \
