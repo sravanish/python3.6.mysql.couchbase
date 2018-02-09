@@ -36,7 +36,7 @@ RUN pip install paramiko scp
 RUN pip install dateutils
 
 # Install couchbase dev tools
-RUN wget wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-4-amd64.deb && \ 
+RUN wget http://packages.couchbase.com/releases/couchbase-release/couchbase-release-1.0-4-amd64.deb && \ 
   dpkg -i couchbase-release-1.0-4-amd64.deb && \
   apt-get update && \
   apt-get -y install libcouchbase-dev build-essential && \
