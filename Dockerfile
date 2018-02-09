@@ -41,7 +41,7 @@ RUN wget wget http://packages.couchbase.com/releases/couchbase-release/couchbase
   apt-get update && \
   apt-get -y install libcouchbase-dev build-essential && \
   pip install couchbase openpyxl && \
-  rm couchbase-release-1.0-2-amd64.deb && \
+  rm couchbase-release-1.0-4-amd64.deb && \
   rm -rf /var/lib/apt/lists/*
 
 
