@@ -32,6 +32,9 @@ RUN pip install mysql-connector-python-rf requests
 # Install paramiko for scp
 RUN pip install paramiko scp
 
+# Install pika for rabbitmq
+RUN pip install pika
+
 # Install dateutils
 RUN pip install dateutils
 
